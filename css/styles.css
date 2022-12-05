@@ -1,0 +1,54 @@
+body, main, nav, ul, li{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.tablet-desktop{
+    display: none;
+}
+
+/*Mobile*/
+.mobile-nav ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.mobile-nav li{
+    text-align: center;
+    padding: 1% 0;
+    border-top: 2px solid #000;
+}
+.mobile-nav li:last-of-type{
+    border-bottom: 2px solid #000;
+}
+
+nav li a{
+    text-decoration: none;
+}
+
+/*Tablet*/
+@media screen and (min-width: 630px){
+    .mobile{
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+    }
+    .tablet-desktop{
+        display: block;
+    }
+
+    nav ul{
+        list-style-type: none;
+    }
+
+    nav li{
+        display: inline-block;
+        border: none;
+    }
+
+    nav a{
+        text-decoration: none;
+    }
+}
