@@ -27,7 +27,7 @@ nav li a{
     text-decoration: none;
 }
 
-/*Tablet*/
+/*Tablet and Desktop*/
 @media screen and (min-width: 630px){
     .mobile{
         display: none;
@@ -39,16 +39,62 @@ nav li a{
         display: block;
     }
 
+    body, main, h1, h2, h3, p {
+        font-family: 'Kdam Thmor Pro', 'Secular One', sans-serif;
+    }
+
+    nav {
+        float: right;
+        width: 100%;
+        margin: 0;
+        background-color: aquamarine;
+    }
+
     nav ul{
-        list-style-type: none;
+        list-style-type: square;
+        width: 100%;
     }
 
     nav li{
         display: inline-block;
         border: none;
+        text-decoration: none; 
+        background-color: #aaa;
+        padding: 3%;
+        margin: 1% 2%;
     }
 
     nav a{
         text-decoration: none;
+        font-weight: bold;
+        font-size: 1.25em;
+        color: #000;
+    }
+
+    main{
+         background-color: beige;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .product {
+        float: left;
+        display: block;
+        border-style: solid;
+        border-color: #000;
+        margin: 3%;
+        padding: 1%;
+        width: 20%;
+    }
+
+    .product img {
+        border-bottom: solid;
+    }
+
+    .product h3 {
+        text-decoration: none;
+        color:#000;
     }
 }
