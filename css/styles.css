@@ -1,17 +1,27 @@
-body, main, nav, ul, li{
+*{
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', 'Secular One', sans-serif;
 }
 
 .tablet-desktop{
     display: none;
 }
 
+#hero {
+    display: inline-flex;
+    text-decoration: none;
+    margin: 2%;
+}
+
 /*Mobile*/
 .mobile-nav ul{
     list-style-type: none;
     padding-left: 0;
+    width: 100%;
+    float: left;
 }
 
 .mobile-nav li{
@@ -25,6 +35,71 @@ body, main, nav, ul, li{
 
 nav li a{
     text-decoration: none;
+    color: #000;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border: solid 3px #000;
+
+}
+
+.menu-btn_burger {
+    width: 36px;
+    height: 6px;
+    background: #000;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+}
+
+.menu-btn_burger::before, .menu-btn_burger::after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 6px;
+    background: #000;
+    border-radius: 4px;
+    transition: all .4s ease-in-out;
+    
+}
+
+.menu-btn_burger::before {
+    margin-top: 2px;
+    transform: translateY(-16px);
+     
+}
+
+.menu-btn_burger::after {
+    transform: translateY(16px);
+     margin-bottom: 2px;
+}
+
+/* Animation for menu */
+.menu-btn.open .menu-btn_burger {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+    transform: rotate(45deg) translate(35px, -36px);
+}
+
+.menu-btn.open .menu-btn_burger::after {
+    transform: rotate(-45deg) translate(35px, 36px);
 }
 
 /*Tablet and Desktop*/
@@ -39,29 +114,26 @@ nav li a{
         display: block;
     }
 
-    body, main, h1, h2, h3, p {
-        font-family: 'Kdam Thmor Pro', 'Secular One', sans-serif;
-    }
-
+   
     nav {
         float: right;
         width: 100%;
         margin: 0;
-        background-color: aquamarine;
+        border: solid;
     }
 
     nav ul{
-        list-style-type: square;
+        
         width: 100%;
+        margin: 0;
     }
 
     nav li{
         display: inline-block;
-        border: none;
         text-decoration: none; 
-        background-color: #aaa;
+        border: solid;
         padding: 3%;
-        margin: 1% 2%;
+        margin: 0;
     }
 
     nav a{
