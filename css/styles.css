@@ -6,7 +6,14 @@
     font-family: 'Kdam Thmor Pro', 'Secular One', sans-serif;
 }
 
+body{
+    background-color: #b57170;
+}
+
 .tablet-desktop{
+    display: none;
+}
+header{
     display: none;
 }
 
@@ -113,13 +120,37 @@ nav li a{
     .tablet-desktop{
         display: block;
     }
+    header{
+        display: block;
+    }
 
+    img {
+        max-width: 100%;
+    }
+
+    header{
+        float: left;
+        width: 25%; 
+        top: 0;
+        padding: 1% 0;
+    }
+    
+    #logo-container{
+        max-width: 25%;
+        margin: 0 auto;
+    }
+
+    header img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
    
     nav {
         float: right;
-        width: 100%;
+        width: 75%;
         margin: 0;
-        border: solid;
+        padding: 1% 0;
     }
 
     nav ul{
@@ -131,9 +162,12 @@ nav li a{
     nav li{
         display: inline-block;
         text-decoration: none; 
-        border: solid;
         padding: 3%;
         margin: 0;
+    }
+
+    nav li:hover{
+        background-color: beige;
     }
 
     nav a{
@@ -144,12 +178,20 @@ nav li a{
     }
 
     main{
-         background-color: beige;
+        clear: left;
+        background-color: beige;
     }
 
-    img {
-        max-width: 100%;
+    #carousel-container{
+        max-width: 80%;
+        margin: 0 auto;
     }
+
+    .carousel-item img{
+        object-fit: scale-down;
+        margin: 0 auto;
+    }
+
 
     .product {
         float: left;

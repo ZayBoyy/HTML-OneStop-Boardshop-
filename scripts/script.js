@@ -14,3 +14,7 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 });
+
+$(".carousel").carousel({
+    intveral: 3000
+})
