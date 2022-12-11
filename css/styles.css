@@ -22,9 +22,26 @@ main {
     display: none;
 }
 
+aside {
+    font-size: 0.73em;
+    font-style: italic;
+}
+
 
 img {
    max-width: 100%;
+}
+
+.center-content {
+    margin: 5%;
+    display: flexbox;
+}
+
+.center-content img {
+    width: 20%;
+    display: inline-flex;
+    margin: 2%;
+    
 }
 
 .product {
@@ -327,7 +344,7 @@ footer a:hover{
     .dropdown-top {
         width: 34%;
         height: 10%;
-        float: right;
+        float: left;
         text-decoration: none; 
         text-align: center;
         border: solid;
@@ -336,7 +353,8 @@ footer a:hover{
     }
 
     .dropdown-img {
-        
+        height: auto;
+        width: 34%;
         display: flex;
         float: right; 
         text-align: center;
