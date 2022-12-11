@@ -13,9 +13,7 @@
     </head>
     <body>
 
-        <div id="hero">
-            <a href="index.html">OneStopBoardShop</a>
-        </div>
+        <div class="top-line dropdown">
 
         <div class="menu-btn">
             <div class="menu-btn_burger">
@@ -24,7 +22,7 @@
 
         <nav class="mobile-nav hidden">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="skate.html">Skateboards</a></li>
                 <li><a href="#">Snowboards</a></li>
                 <li><a href="#">Surfboards</a></li>
             </ul>
@@ -32,22 +30,71 @@
 
         <nav class="tablet-desktop">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Snowboards</a></li>
-                <li><a href="#">Surfboards</a></li>
+                <div class="dropdown-img">
+                    <button class="dropdown">
+                        <a href="index.html"><img src="images/boardshop_logo.jpg"></a>
+                   </button>
+                   </div>
+                <div class="dropdown-top">
+                     <button class="dropdown">
+                        <li><a href="skate.html">Skateboards</a></li>
+                    </button>
+                    <div class="dropdown-items">
+                        <a href="#">Boards</a>
+                        <a href="#">Trucks</a>
+                        <a href="#">Wheels</a>
+                    </div>
+                </div>
+                <div class="dropdown-top">
+                    <button class="dropdown">
+                        <li><a href="#">Snowboards</a></li>
+                    </button>
+                    <div class="dropdown-items">
+                        <a href="#">Boards</a>
+                        <a href="#">Bindings</a>
+                        <a href="#">Boots</a>
+                    </div>
+                </div>
+                <div class="dropdown-top">
+                    <button class="dropdown">
+                        <li><a href="#">Surfboards</a></li>
+                    </button>
+                    <div class="dropdown-items">
+                        <a href="#">Boards</a>
+                        <a href="#">Wax</a>
+                        <a href="#">Fins</a>
+                    </div>
+                </div>
             </ul> 
-        </nav>
+        </nav> 
+    </div>
 
         <main>
 
-            <grid></grid>
+            <h1>All Products</h1>
 
-           <a href="index.html">
+           <div class="items">
             <div class="product">
                 <img src="images/blank-deck.jpg" alt="skateboard deck">
-                <h3>Generic Skateboard - Empty Design - 8.375</h3>
+                <h3>Generic Skateboard - Blank - 8.375</h3>
             </div>
-            </a>
+
+            <div class="product">
+                <img src="images/gayzay.png" alt="skateboard deck">
+                <h3>Generic Skateboard - GayZay - 8.25</h3>
+            </div>
+
+            <div class="product truck">
+                <img src="images/independent-truck.webp" alt="skateboard trucks">
+                <h3>Indepenent Skateboard Trucks</h3>
+            </div>
+
+            <div class="product truck">
+                <img src="images/venture-truck.webp" alt="skateboard trucks">
+                <h3>Venture Team Skateboard Trucks</h3>
+            </div>
+
+            </div>
 
         </main>
         <script src="scripts/script.js"></script>

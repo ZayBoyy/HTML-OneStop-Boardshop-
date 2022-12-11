@@ -10,10 +10,37 @@
     display: none;
 }
 
-#hero {
-    display: inline-flex;
+
+img {
+   max-width: 100%;
+}
+
+.product {
+    float: left;
+    min-height: 250px;
+}
+
+.product img {
+    align-content: center;
+    object-fit: contain;
+    border-bottom: solid;
+    height: 150px;
+    width: 150px;
+}
+
+.product h3 {
     text-decoration: none;
-    margin: 2%;
+    color:#000;
+}
+
+.items {
+    display: block;
+    margin: 0 2%;
+}
+
+h1 {
+    margin: 3%;
+    border-bottom: solid;
 }
 
 /*Mobile*/
@@ -42,6 +69,20 @@ nav li a{
 .hidden {
     display: none;
 }
+
+
+.product {
+    margin: 0 auto;
+    display: block;
+    border: solid;
+    border-color: #000;
+    margin: 0;
+    padding: 1%; 
+    width: 50%;
+    
+}
+
+/* Style Rules to make Menu Button */
 
 .menu-btn {
     position: relative;
@@ -104,69 +145,93 @@ nav li a{
 
 /*Tablet and Desktop*/
 @media screen and (min-width: 630px){
-    .mobile{
+    .mobile, .mobile-nav, .menu-btn, .menu-btn_burger{
         display: none;
     }
-    .mobile-nav{
-        display: none;
-    }
+    
     .tablet-desktop{
-        display: block;
+        display: block
     }
 
+    .top-line {
+        display: flex;
+        border: solid;
+        border-bottom: none;
+        padding: 0;
+
+    }
+
+    header img{
+        align-items: center;
+        margin: 0;
+        border-bottom: black;
+    }
    
     nav {
-        float: right;
+        display: flex;
         width: 100%;
         margin: 0;
-        border: solid;
     }
 
     nav ul{
-        
+        list-style-type: none;
+        display: flex;
         width: 100%;
         margin: 0;
     }
 
-    nav li{
-        display: inline-block;
+    .dropdown-top {
+        width: 34%;
+        height: 10%;
+        float: right;
         text-decoration: none; 
+        text-align: center;
         border: solid;
-        padding: 3%;
+        padding: 2%;
         margin: 0;
     }
 
-    nav a{
+    .dropdown-img {
+        
+        
+        float: right; 
+        text-align: center;
+        border: none;
+        padding: 0;
+        margin: 0;
+}
+    
+
+    .dropdown-items {
+        display: none;
+    }
+    
+    .dropdown-items a {
+        display: block;
+        font-size: 1em;
+        
+    }
+    
+    .dropdown-top:hover .dropdown-items {
+        display: block;
+    }
+    
+    .dropdown {
+        background: none;
+    }
+    .dropdown li {
+        font-weight: bold;
+    }
+
+    nav a {
         text-decoration: none;
         font-weight: bold;
         font-size: 1.25em;
         color: #000;
     }
 
-    main{
-         background-color: beige;
-    }
-
-    img {
-        max-width: 100%;
-    }
-
     .product {
-        float: left;
-        display: block;
-        border-style: solid;
-        border-color: #000;
-        margin: 3%;
-        padding: 1%;
-        width: 20%;
+        width: 25%;
     }
 
-    .product img {
-        border-bottom: solid;
-    }
-
-    .product h3 {
-        text-decoration: none;
-        color:#000;
-    }
 }
