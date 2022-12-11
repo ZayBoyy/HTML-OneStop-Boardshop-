@@ -198,6 +198,7 @@ main{
 }
 
 #form-container{
+    text-align: center;
     max-width: fit-content;
     margin: 0 auto;
 }
