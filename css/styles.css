@@ -145,6 +145,16 @@ nav li a{
     padding: 2%;
 }
 
+main{
+    background-color: beige;
+}
+.portfolio-container{
+
+    max-width: 60%;
+    margin: 1% auto;
+    padding: 2% 0;
+}
+
 /*Tablet and Desktop*/
 @media screen and (min-width: 630px){
     .mobile{
@@ -278,6 +288,10 @@ nav li a{
     .product h3 {
         text-decoration: none;
         color:#000;
+    }
+
+    .portfolio-container{
+        max-width: 45%;
     }
 
     footer{
