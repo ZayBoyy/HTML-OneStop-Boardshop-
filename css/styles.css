@@ -211,6 +211,26 @@ main{
     margin-left: 10px;
 }
 
+textarea{
+    border-radius: 8px;
+}
+
+footer{
+    padding: 2% 0;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer a{
+    color: beige;
+}
+
+footer a:hover{
+    text-decoration: none;
+}
+
 /*Tablet and Desktop*/
 @media screen and (min-width: 630px){
     .mobile, .mobile-nav, .menu-btn, .menu-btn_burger{
@@ -399,22 +419,5 @@ main{
     .portfolio-container{
         max-width: 45%;
     }
-
-    footer{
-        padding: 2% 0;
-    }
-
-    footer p{
-        text-align: center;
-    }
-
-    footer a{
-        color: beige;
-    }
-
-    footer a:hover{
-        text-decoration: none;
-    }
-
 
 }
