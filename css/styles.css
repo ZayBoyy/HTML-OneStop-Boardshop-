@@ -341,6 +341,7 @@ main{
     #carousel-container{
         max-width: 80%;
         margin: 0 auto;
+        padding: 2% 0;
     }
 
     .carousel-item img{
