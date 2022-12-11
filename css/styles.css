@@ -187,6 +187,7 @@ nav li a{
 }
 
 main{
+    clear: right;
     background-color: beige;
 }
 .portfolio-container{
@@ -333,7 +334,7 @@ main{
     }
 
     main{
-        clear: left;
+        clear: right;
         background-color: beige;
     }
 
