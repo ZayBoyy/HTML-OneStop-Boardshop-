@@ -16,11 +16,19 @@ body{
 header{
     display: none;
 }
+#carousel-container{
+    display: none;
+}
 
 #hero {
     display: inline-flex;
     text-decoration: none;
     margin: 2%;
+}
+
+#hero a{
+    color: #000;
+    font-weight: bold;
 }
 
 /*Mobile*/
@@ -33,7 +41,7 @@ header{
 
 .mobile-nav li{
     text-align: center;
-    padding: 1% 0;
+    padding: 2% 0;
     border-top: 2px solid #000;
 }
 .mobile-nav li:last-of-type{
@@ -123,6 +131,15 @@ nav li a{
     header{
         display: block;
     }
+    #carousel-container{
+        display: block;
+    }
+    .menu-btn{
+        display: none;
+    }
+    #hero{
+        display: none;
+    }
 
     img {
         max-width: 100%;
@@ -175,6 +192,10 @@ nav li a{
         font-weight: bold;
         font-size: 1.25em;
         color: #000;
+    }
+
+    nav a:hover{
+        text-decoration: none;
     }
 
     main{
