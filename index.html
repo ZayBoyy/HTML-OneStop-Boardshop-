@@ -3,63 +3,96 @@
     <head>
         <meta charset="utf-8">
         <title>OneStop Boardshop</title>
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Secular+One&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-       
-            <div class="menu-btn">
-                <div class="menu-btn_burger">
+
+        <div class="menu-btn">
+            <div class="menu-btn_burger">
+            </div>
+        </div>
+
+        <nav class="mobile-nav hidden">
+            <ul>
+                <li><a href="skate.html">Skateboards</a></li>
+                <li><a href="snow.html">Snowboards</a></li>
+                <li><a href="#">Surfboards</a></li>
+            </ul>
+        </nav>
+
+        <nav class="tablet-desktop">
+            <ul>
+                <div class="dropdown-img">
+                    <button class="dropdown">
+                        <a href="index.html"><img src="images/boardshop_logo.jpg"></a>
+                   </button>
+                   </div>
+                <div class="dropdown-top">
+                    <button class="dropdown">
+                        <li><a href="skate.html">Skateboards</a></li>
+                    </button>
+                    <div class="dropdown-items">
+                        <a href="#">Boards</a>
+                        <a href="#">Trucks</a>
+                        <a href="#">Wheels</a>
+                    </div>
+                </div>
+                <div class="dropdown-top">
+                    <button class="dropdown">
+                        <li><a href="snow.html">Snowboards</a></li>
+                    </button>
+                    <div class="dropdown-items">
+                        <a href="#">Boards</a>
+                        <a href="#">Bindings</a>
+                        <a href="#">Boots</a>
+                    </div>
+                </div>
+                <div class="dropdown-top">
+                    <button class="dropdown">
+                        <li><a href="#">Surfboards</a></li>
+                    </button>
+                    <div class="dropdown-items">
+                        <a href="#">Boards</a>
+                        <a href="#">Wax</a>
+                        <a href="#">Fins</a>
+                    </div>
+                </div>
+            </ul> 
+        </nav> 
+    </div>
+
+        <main>
+            <div id="carousel-container">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block" src="images/slide-skateboard.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block" src="images/slide-snowboard.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block" src="images/slide-surfboard.png" alt="Third slide">
+                    </div>
+                    </div>
                 </div>
             </div>
-    
-            <nav class="mobile-nav hidden">
-                <ul>
-                    <li><a href="skate.html">Skateboards</a></li>
-                    <li><a href="#">Snowboards</a></li>
-                    <li><a href="#">Surfboards</a></li>
-                </ul>
-            </nav>
-    
-            <nav class="tablet-desktop">
-                <ul>
-                    <div class="dropdown-img">
-                        <button class="dropdown">
-                            <a href="index.html"><img src="images/boardshop_logo.jpg"></a>
-                       </button>
-                       </div>
-                    <div class="dropdown-top">
-                        <button class="dropdown">
-                            <li><a href="skate.html">Skateboards</a></li>
-                        </button>
-                        <div class="dropdown-items">
-                            <a href="#">Boards</a>
-                            <a href="#">Trucks</a>
-                            <a href="#">Wheels</a>
-                        </div>
-                    </div>
-                    <div class="dropdown-top">
-                        <button class="dropdown">
-                            <li><a href="#">Snowboards</a></li>
-                        </button>
-                        <div class="dropdown-items">
-                            <a href="#">Boards</a>
-                            <a href="#">Bindings</a>
-                            <a href="#">Boots</a>
-                        </div>
-                    </div>
-                    <div class="dropdown-top">
-                        <button class="dropdown">
-                            <li><a href="#">Surfboards</a></li>
-                        </button>
-                        <div class="dropdown-items">
-                            <a href="#">Boards</a>
-                            <a href="#">Wax</a>
-                            <a href="#">Fins</a>
-                        </div>
-                    </div>
-                </ul> 
-            </nav> 
-        </div>
+            
+        </main>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.slim.js"
+            integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
+            crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
